@@ -69,9 +69,9 @@ import { gsap } from 'gsap';
 import MicroStage from './micro-stage.vue';
 import MicroStack from './micro-stack.vue';
 
-import BellIcon from './assets/icons/bell.svg';
-import DocIcon from './assets/icons/doc.svg';
-import CloseIcon from './assets/icons/close.svg';
+import BellIcon from '/assets/icons/bell.svg';
+import DocIcon from '/assets/icons/doc.svg';
+import CloseIcon from '/assets/icons/close.svg';
 
 export default {
 
@@ -110,7 +110,7 @@ export default {
             return new Promise(onComplete => {
 
                 const containerHeight = 345
-                const notificationHeight = this.$refs.notification.getBoundingClientReact().height;
+                const notificationHeight = this.$refs.notification.getBoundingClientRect().height;
                 const containerPadding = 10;
                 const distance = ( (containerHeight / 2) - notificationHeight ) + containerPadding;
 
